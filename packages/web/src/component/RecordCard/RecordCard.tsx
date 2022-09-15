@@ -25,7 +25,7 @@ const RecordCard: React.FC<RecordCardProps> = ({ val }) => {
 
   // Convert firebase date to standard Date format
   const date = new Date(val.DATE.seconds * 1000);
-  const dateStr = `${date.getFullYear()}/${date.getMonth()}/${date.getDate()}\n ${date.getHours()}:${date.getMinutes()}`;
+  const dateStr = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}\n ${date.getHours()}:${date.getMinutes()}`;
 
   useEffect(() => {
     if (val !== undefined) {
