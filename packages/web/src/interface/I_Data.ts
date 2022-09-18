@@ -1,8 +1,10 @@
+export interface RecordDataDateProps {
+  nanoseconds: number;
+  seconds: number;
+}
+
 export interface RecordDataProps {
-  DATE: {
-    nanoseconds: number;
-    seconds: number;
-  };
+  DATE: RecordDataDateProps;
   DIA: number;
   PULSE: number;
   SYS: number;

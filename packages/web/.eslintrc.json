@@ -36,6 +36,10 @@
   "rules": {
     "semi": "off", 
     "@typescript-eslint/semi": "warn",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "default-param-last": "off",
+    "@typescript-eslint/default-param-last": "warn",
     "linebreak-style": [
       "error",
       "windows"
